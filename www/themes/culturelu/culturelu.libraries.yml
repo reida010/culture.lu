@@ -1,0 +1,48 @@
+uikit:
+  remote: https://getuikit.com/
+  version: 3.5.9
+  license:
+    name: MIT
+    url: https://github.com/uikit/uikit/blob/develop/LICENSE.md
+    gpl-compatible: true
+  css:
+    base:
+      https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css: { type: external, minified: true }
+  js:
+    //cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js: { type: external, minified: true }
+    //cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+
+global-style:
+  version: VERSION
+  css:
+    base:
+      css/culturelu.base.css: {}
+    layout:
+      css/culturelu.layout.css: {}
+    component:
+      css/culturelu.component.css: {}
+    theme:
+      css/culturelu.theme.css: {}
+  js:
+    js/culturelu.theme.js: {}
+  dependencies:
+    - culturelu/uikit
+
+dropbutton:
+  version: VERSION
+  css:
+    component:
+      css/uikit.dropbutton.css: {}
+  dependencies:
+    - culturelu/uikit
+
+active-link:
+  version: VERSION
+  js:
+    js/culturelu.active-link.js: {}
+  dependencies:
+    - culturelu/uikit
