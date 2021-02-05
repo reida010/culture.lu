@@ -9,8 +9,8 @@ uikit:
     base:
       /libraries/uikit/css/uikit.culture.css: { minified: true }
   js:
-    /libraries/uikit/js/uikit.min.js: { type: external, minified: true }
-    /libraries/uikit/js/uikit-icons.min.js: { type: external, minified: true }
+    /libraries/uikit/js/uikit.min.js: { minified: true }
+    /libraries/uikit/js/uikit-icons.min.js: { minified: true }
   dependencies:
     - core/jquery
     - core/jquery.once
