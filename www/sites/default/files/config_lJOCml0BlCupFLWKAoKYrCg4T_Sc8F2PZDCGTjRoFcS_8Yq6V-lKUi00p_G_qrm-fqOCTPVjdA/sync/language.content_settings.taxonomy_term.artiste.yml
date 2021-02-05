@@ -1,0 +1,11 @@
+uuid: f7003448-d330-4ad3-9eeb-b44a4fd214e1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.artiste
+id: taxonomy_term.artiste
+target_entity_type_id: taxonomy_term
+target_bundle: artiste
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: b3546bc1-3791-4b79-8bf4-c9f9d9ac956f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisateur_website
+    - node.type.aide_a_la_creation
+id: node.aide_a_la_creation.field_organisateur_website
+field_name: field_organisateur_website
+entity_type: node
+bundle: aide_a_la_creation
+label: 'Site de l''organisateur'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

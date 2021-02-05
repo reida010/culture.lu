@@ -1,0 +1,22 @@
+uuid: 7538bf08-0e90-4318-912b-99b004ec8555
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_comment.field_content_long_text
+    - paragraphs.paragraphs_type.content_comment
+  module:
+    - text
+id: paragraph.content_comment.default
+targetEntityType: paragraph
+bundle: content_comment
+mode: default
+content:
+  field_content_long_text:
+    weight: 0
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

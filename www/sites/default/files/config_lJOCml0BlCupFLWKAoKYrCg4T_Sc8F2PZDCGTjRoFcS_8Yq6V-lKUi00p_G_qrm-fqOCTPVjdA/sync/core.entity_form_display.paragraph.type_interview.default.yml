@@ -1,0 +1,54 @@
+uuid: 926581a0-a683-4f30-88db-c9638aba7170
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.type_interview.field_artiste
+    - field.field.paragraph.type_interview.field_description
+    - field.field.paragraph.type_interview.field_live
+    - field.field.paragraph.type_interview.field_photo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.type_interview
+  module:
+    - image
+id: paragraph.type_interview.default
+targetEntityType: paragraph
+bundle: type_interview
+mode: default
+content:
+  field_artiste:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_description:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_live:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_photo:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

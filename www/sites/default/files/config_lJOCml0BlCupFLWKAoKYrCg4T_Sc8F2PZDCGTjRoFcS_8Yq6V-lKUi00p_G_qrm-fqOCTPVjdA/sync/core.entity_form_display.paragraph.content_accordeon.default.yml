@@ -1,0 +1,34 @@
+uuid: 79aeaedc-804a-4faa-ab76-c490692a4464
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_accordeon.field_content_long_text
+    - field.field.paragraph.content_accordeon.field_titre
+    - paragraphs.paragraphs_type.content_accordeon
+  module:
+    - text
+id: paragraph.content_accordeon.default
+targetEntityType: paragraph
+bundle: content_accordeon
+mode: default
+content:
+  field_content_long_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_titre:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

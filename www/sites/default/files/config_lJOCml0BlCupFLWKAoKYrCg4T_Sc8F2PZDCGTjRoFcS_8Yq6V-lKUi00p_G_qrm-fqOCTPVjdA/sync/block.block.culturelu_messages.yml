@@ -1,0 +1,22 @@
+uuid: 3b52efc3-5e27-4cf0-bb47-8d1cd8d785b2
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - culturelu
+_core:
+  default_config_hash: glwm4cQ-KzfrJwihvOX60Pp0O5zxdTeovmZg49pSzcE
+id: culturelu_messages
+theme: culturelu
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

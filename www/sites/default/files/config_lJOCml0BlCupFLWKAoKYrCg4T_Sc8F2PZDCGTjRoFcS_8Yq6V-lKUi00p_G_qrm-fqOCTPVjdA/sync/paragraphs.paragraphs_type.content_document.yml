@@ -1,0 +1,10 @@
+uuid: 4bdfb062-4075-49ea-96c4-2fd94803ae69
+langcode: fr
+status: true
+dependencies: {  }
+id: content_document
+label: 'Contenu - document'
+icon_uuid: null
+icon_default: null
+description: 'Contenu de type document'
+behavior_plugins: {  }

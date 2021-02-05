@@ -1,0 +1,55 @@
+uuid: 99cc5af4-fa12-4940-a977-5954bd689b67
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.type_livre.field_artiste
+    - field.field.paragraph.type_livre.field_description
+    - field.field.paragraph.type_livre.field_photo
+    - field.field.paragraph.type_livre.field_titre
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.type_livre
+  module:
+    - image
+id: paragraph.type_livre.default
+targetEntityType: paragraph
+bundle: type_livre
+mode: default
+content:
+  field_artiste:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_description:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photo:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_titre:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

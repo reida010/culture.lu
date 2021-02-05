@@ -1,0 +1,19 @@
+uuid: 2768bfca-8ecb-4dc7-9d7c-d917c3a41f08
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.type_playlist
+id: paragraph.type_playlist.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: type_playlist
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

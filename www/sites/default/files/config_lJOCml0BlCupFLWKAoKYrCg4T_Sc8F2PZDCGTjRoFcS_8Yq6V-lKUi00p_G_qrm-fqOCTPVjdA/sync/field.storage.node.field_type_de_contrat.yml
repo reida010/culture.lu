@@ -1,0 +1,39 @@
+uuid: 46beb730-3cbb-4a2e-bf37-0453c3284b3d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type_de_contrat
+field_name: field_type_de_contrat
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: CDD
+      label: CDD
+    -
+      value: CDI
+      label: CDI
+    -
+      value: Free-lance
+      label: Free-lance
+    -
+      value: Intermittent
+      label: Intermittent
+    -
+      value: Stage
+      label: Stage
+    -
+      value: Volontaire
+      label: Volontaire
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

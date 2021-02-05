@@ -1,0 +1,20 @@
+uuid: 561a4d91-3d7e-43a4-8201-5d94b7d560eb
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - culturelu
+_core:
+  default_config_hash: wZmWRYVwEG22otzD75my43kqN6Oi6e2vRXd7g9h5apY
+id: culturelu_page_title
+theme: culturelu
+region: title
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

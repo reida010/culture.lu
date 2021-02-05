@@ -1,0 +1,87 @@
+uuid: c65af359-a444-4119-9cbb-cec6139d210c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.emplois.field_contenu
+    - field.field.node.emplois.field_date
+    - field.field.node.emplois.field_lieu
+    - field.field.node.emplois.field_photo_icone
+    - field.field.node.emplois.field_texte_banniere_animee
+    - field.field.node.emplois.field_type_d_emploi
+    - field.field.node.emplois.field_type_de_contrat
+    - node.type.emplois
+  module:
+    - datetime
+    - entity_reference_revisions
+    - image
+    - options
+    - user
+id: node.emplois.default
+targetEntityType: node
+bundle: emplois
+mode: default
+content:
+  field_contenu:
+    weight: 109
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_date:
+    weight: 102
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_lieu:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_photo_icone:
+    weight: 105
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_texte_banniere_animee:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_type_d_emploi:
+    weight: 107
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_type_de_contrat:
+    weight: 106
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

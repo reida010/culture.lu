@@ -1,0 +1,21 @@
+uuid: 694d5836-84e1-49b8-b06f-569caf0d71d6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.emplois
+  module:
+    - datetime
+id: node.emplois.field_date
+field_name: field_date
+entity_type: node
+bundle: emplois
+label: 'Délai de candidature'
+description: 'Contexte Emplois'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,27 @@
+uuid: 7b38f4d7-0c89-4fd2-aec3-3d7bac4c20cc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_document
+    - paragraphs.paragraphs_type.content_document
+  module:
+    - file
+id: paragraph.content_document.field_document
+field_name: field_document
+entity_type: paragraph
+bundle: content_document
+label: Document
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: '15 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

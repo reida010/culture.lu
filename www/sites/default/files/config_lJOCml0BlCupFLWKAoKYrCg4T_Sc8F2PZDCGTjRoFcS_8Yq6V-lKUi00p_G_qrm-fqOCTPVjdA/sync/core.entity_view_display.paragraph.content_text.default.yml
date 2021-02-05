@@ -1,0 +1,22 @@
+uuid: 0def1b20-5c77-4ee0-a53d-f2799d8627d0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_text.field_content_long_text
+    - paragraphs.paragraphs_type.content_text
+  module:
+    - text
+id: paragraph.content_text.default
+targetEntityType: paragraph
+bundle: content_text
+mode: default
+content:
+  field_content_long_text:
+    weight: 0
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

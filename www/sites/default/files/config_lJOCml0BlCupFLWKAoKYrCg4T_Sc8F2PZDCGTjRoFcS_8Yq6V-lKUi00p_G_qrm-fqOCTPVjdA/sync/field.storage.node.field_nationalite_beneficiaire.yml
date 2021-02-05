@@ -1,0 +1,39 @@
+uuid: 0fb2c80f-15bf-4d72-8007-238ef5ee5b1d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_nationalite_beneficiaire
+field_name: field_nationalite_beneficiaire
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: LU
+      label: LU
+    -
+      value: FR
+      label: FR
+    -
+      value: BE
+      label: BE
+    -
+      value: DE
+      label: DE
+    -
+      value: EU
+      label: EU
+    -
+      value: other
+      label: Autres
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

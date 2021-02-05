@@ -1,0 +1,19 @@
+uuid: baf42042-f5ad-4ad7-b5dc-c8f5c4354885
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nom_du_contact
+    - node.type.appels
+id: node.appels.field_nom_du_contact
+field_name: field_nom_du_contact
+entity_type: node
+bundle: appels
+label: 'Nom du contact'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

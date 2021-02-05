@@ -1,0 +1,8 @@
+uuid: 83fdae5a-7afb-4bcd-9f60-9b2407e7a38d
+langcode: fr
+status: true
+dependencies: {  }
+name: Auteur
+vid: auteur
+description: ''
+weight: 0

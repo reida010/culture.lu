@@ -1,0 +1,31 @@
+uuid: fe4cfbf0-b624-47ec-9469-e0c0808e1379
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_accordeon.field_content_long_text
+    - field.field.paragraph.content_accordeon.field_titre
+    - paragraphs.paragraphs_type.content_accordeon
+  module:
+    - text
+id: paragraph.content_accordeon.default
+targetEntityType: paragraph
+bundle: content_accordeon
+mode: default
+content:
+  field_content_long_text:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_titre:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

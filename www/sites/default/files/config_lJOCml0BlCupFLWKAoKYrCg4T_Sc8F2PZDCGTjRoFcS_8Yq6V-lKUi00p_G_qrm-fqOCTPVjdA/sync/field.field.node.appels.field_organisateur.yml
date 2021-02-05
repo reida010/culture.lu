@@ -1,0 +1,19 @@
+uuid: 40eb35b1-8382-431e-9166-8617d7e39a48
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisateur
+    - node.type.appels
+id: node.appels.field_organisateur
+field_name: field_organisateur
+entity_type: node
+bundle: appels
+label: 'Nom de l''entreprise / organisation'
+description: 'Organisateur de l''appel'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

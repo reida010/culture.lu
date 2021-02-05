@@ -1,0 +1,22 @@
+uuid: ba61d082-b010-4277-a861-ca8547e7b923
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - culturelu
+_core:
+  default_config_hash: jvgVhNFR490_ezNQe5y6A1D_TGWuYIMiAngzXHB4v-8
+id: culturelu_breadcrumbs
+theme: culturelu
+region: content
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

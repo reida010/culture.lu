@@ -1,0 +1,27 @@
+uuid: dc2409ba-7ebe-42ad-a493-4f6fc90462ae
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - culturelu
+_core:
+  default_config_hash: S-p4LiipK72JjcJoK6uZUEAp1O2tokboXVoWp2xSIfI
+id: culturelu_tools
+theme: culturelu
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

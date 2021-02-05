@@ -1,0 +1,10 @@
+uuid: 19e21702-e889-4961-9632-7d90ef790082
+langcode: fr
+status: true
+dependencies: {  }
+id: type_article
+label: 'Résumé - Article'
+icon_uuid: null
+icon_default: null
+description: 'Teaser type - article'
+behavior_plugins: {  }

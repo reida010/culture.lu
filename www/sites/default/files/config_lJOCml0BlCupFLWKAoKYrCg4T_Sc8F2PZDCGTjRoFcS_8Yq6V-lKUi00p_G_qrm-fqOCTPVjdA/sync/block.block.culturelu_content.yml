@@ -1,0 +1,22 @@
+uuid: 81ef7962-4824-47fd-b5ff-c2fba2873e96
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - culturelu
+_core:
+  default_config_hash: IKnIhOCj2Q3EgMWGwcuw7Sp_UxtKzqSDPCl7llRV8XU
+id: culturelu_content
+theme: culturelu
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

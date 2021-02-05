@@ -1,0 +1,19 @@
+uuid: 30aae59e-080d-4278-825e-c196f035e405
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titre
+    - node.type.aide_a_la_creation
+id: node.aide_a_la_creation.field_titre
+field_name: field_titre
+entity_type: node
+bundle: aide_a_la_creation
+label: 'Nom de l''aide'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

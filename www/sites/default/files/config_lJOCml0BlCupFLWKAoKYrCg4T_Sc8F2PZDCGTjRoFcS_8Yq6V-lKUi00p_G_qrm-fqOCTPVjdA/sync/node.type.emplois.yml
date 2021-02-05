@@ -1,0 +1,17 @@
+uuid: 85c1d761-a114-4036-8226-87e6474cd01d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Emplois
+type: emplois
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

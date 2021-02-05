@@ -1,0 +1,10 @@
+uuid: 5189f884-0434-46af-8a17-cb4e79c29792
+langcode: fr
+status: true
+dependencies: {  }
+id: type_video
+label: 'Résumé - Video'
+icon_uuid: null
+icon_default: null
+description: 'Teaser type - video'
+behavior_plugins: {  }

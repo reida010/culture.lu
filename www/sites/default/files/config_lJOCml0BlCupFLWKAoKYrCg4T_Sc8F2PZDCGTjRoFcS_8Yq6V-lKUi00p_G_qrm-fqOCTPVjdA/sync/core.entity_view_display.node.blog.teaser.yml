@@ -1,0 +1,37 @@
+uuid: 3493216c-772a-4d55-80ea-119c0bdab299
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.blog.field_contenu
+    - field.field.node.blog.field_date
+    - field.field.node.blog.field_in_collaboration_with
+    - field.field.node.blog.field_resume
+    - field.field.node.blog.field_tags_blog
+    - field.field.node.blog.field_texte_banniere_animee
+    - field.field.node.blog.field_theme
+    - field.field.node.blog.field_type
+    - node.type.blog
+  module:
+    - user
+id: node.blog.teaser
+targetEntityType: node
+bundle: blog
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contenu: true
+  field_date: true
+  field_in_collaboration_with: true
+  field_resume: true
+  field_tags_blog: true
+  field_texte_banniere_animee: true
+  field_theme: true
+  field_type: true
+  langcode: true

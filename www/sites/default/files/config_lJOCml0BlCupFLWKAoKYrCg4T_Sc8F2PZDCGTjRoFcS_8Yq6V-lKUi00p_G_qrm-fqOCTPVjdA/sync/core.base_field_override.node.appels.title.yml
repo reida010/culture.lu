@@ -1,0 +1,18 @@
+uuid: 934c1908-e2e3-406f-927c-baeb2ae90432
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.appels
+id: node.appels.title
+field_name: title
+entity_type: node
+bundle: appels
+label: 'Titre de l''appel'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

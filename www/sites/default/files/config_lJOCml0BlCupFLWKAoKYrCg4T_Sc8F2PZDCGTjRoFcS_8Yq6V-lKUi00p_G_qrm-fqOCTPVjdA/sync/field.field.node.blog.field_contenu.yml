@@ -1,0 +1,74 @@
+uuid: 585aead3-73ee-416b-bb61-e059932c5b72
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenu
+    - node.type.blog
+    - paragraphs.paragraphs_type.content_accordeon
+    - paragraphs.paragraphs_type.content_audio
+    - paragraphs.paragraphs_type.content_comment
+    - paragraphs.paragraphs_type.content_pictures
+    - paragraphs.paragraphs_type.content_text
+    - paragraphs.paragraphs_type.content_video
+  module:
+    - entity_reference_revisions
+id: node.blog.field_contenu
+field_name: field_contenu
+entity_type: node
+bundle: blog
+label: 'Construisez votre contenu avec les différents proposé'
+description: '<p><small><i>Afin de construire votre contenu, sélectionné le contenu approprié et cliqué pour l''ajouter</i></small></p>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_audio: content_audio
+      content_accordeon: content_accordeon
+      content_comment: content_comment
+      content_pictures: content_pictures
+      content_text: content_text
+      content_video: content_video
+    target_bundles_drag_drop:
+      content_accordeon:
+        enabled: true
+        weight: 13
+      content_audio:
+        enabled: true
+        weight: 12
+      content_comment:
+        enabled: true
+        weight: 13
+      content_pictures:
+        enabled: true
+        weight: 14
+      content_text:
+        enabled: true
+        weight: 15
+      content_video:
+        enabled: true
+        weight: 16
+      type_article:
+        weight: 7
+        enabled: false
+      type_interview:
+        weight: 8
+        enabled: false
+      type_livre:
+        weight: 9
+        enabled: false
+      type_playlist:
+        weight: 10
+        enabled: false
+      type_podcat:
+        weight: 11
+        enabled: false
+      type_video:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 7e155495-09d5-4a63-b598-1d8455269888
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nationalite_beneficiaire
+    - node.type.appels
+  module:
+    - options
+id: node.appels.field_nationalite_beneficiaire
+field_name: field_nationalite_beneficiaire
+entity_type: node
+bundle: appels
+label: 'Résident / nationalité du bénéficiaire'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

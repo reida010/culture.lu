@@ -1,0 +1,18 @@
+uuid: 46f34cb8-36e7-4656-b9dd-4f6c86b4fcd1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.emplois
+id: node.emplois.title
+field_name: title
+entity_type: node
+bundle: emplois
+label: 'Titre du poste'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

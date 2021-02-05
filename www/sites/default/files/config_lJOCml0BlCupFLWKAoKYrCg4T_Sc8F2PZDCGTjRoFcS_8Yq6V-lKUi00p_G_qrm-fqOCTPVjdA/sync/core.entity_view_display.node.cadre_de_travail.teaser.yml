@@ -1,0 +1,25 @@
+uuid: 6ec1c64b-1f68-4783-88c8-fc66ee2e9e3b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cadre_de_travail.field_contenu
+    - field.field.node.cadre_de_travail.field_titre
+    - node.type.cadre_de_travail
+  module:
+    - user
+id: node.cadre_de_travail.teaser
+targetEntityType: node
+bundle: cadre_de_travail
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contenu: true
+  field_titre: true
+  langcode: true

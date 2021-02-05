@@ -1,0 +1,22 @@
+uuid: 948b2512-e87c-4772-9fdf-48d5484eecfb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - uikit
+_core:
+  default_config_hash: cvy9DU9bYGqyjbt7NGUl11SYO_uykgva2-234h5DQsU
+id: uikit_help
+theme: uikit
+region: content
+weight: -1
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: ea91bb46-81eb-460f-9e13-8284e54c3df3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.cadre_de_travail
+id: node.cadre_de_travail.title
+field_name: title
+entity_type: node
+bundle: cadre_de_travail
+label: 'Cadre de travail'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

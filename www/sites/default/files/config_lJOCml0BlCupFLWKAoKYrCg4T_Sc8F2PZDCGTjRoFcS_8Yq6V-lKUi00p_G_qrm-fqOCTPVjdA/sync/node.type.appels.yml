@@ -1,0 +1,17 @@
+uuid: 94ffc382-514b-4c8f-978b-9bc3ec65aebe
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Appels
+type: appels
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

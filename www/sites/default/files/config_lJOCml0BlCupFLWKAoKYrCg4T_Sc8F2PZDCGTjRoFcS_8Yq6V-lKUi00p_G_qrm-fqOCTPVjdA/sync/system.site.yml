@@ -1,0 +1,14 @@
+uuid: ecccc12a-0048-4b09-a56d-8ac4a42322de
+name: Culture.lu
+mail: info@meshbeta.yourweb.de
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

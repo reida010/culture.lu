@@ -1,0 +1,19 @@
+uuid: 8b320b94-000c-4e0c-95c3-412a6c4470bf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titre
+    - paragraphs.paragraphs_type.type_playlist
+id: paragraph.type_playlist.field_titre
+field_name: field_titre
+entity_type: paragraph
+bundle: type_playlist
+label: 'Nom de la playlist'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

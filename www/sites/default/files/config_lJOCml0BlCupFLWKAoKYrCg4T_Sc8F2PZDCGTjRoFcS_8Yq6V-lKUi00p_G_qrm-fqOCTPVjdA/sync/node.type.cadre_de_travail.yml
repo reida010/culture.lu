@@ -1,0 +1,17 @@
+uuid: be7cf01c-b34e-4dea-8950-210d6d52aedf
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Cadre de travail'
+type: cadre_de_travail
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

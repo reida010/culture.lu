@@ -1,0 +1,11 @@
+uuid: e4f4f638-84e3-40a1-a92a-0e932ce77615
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.cadre_de_travail
+id: node.cadre_de_travail
+target_entity_type_id: node
+target_bundle: cadre_de_travail
+default_langcode: site_default
+language_alterable: false

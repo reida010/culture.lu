@@ -1,0 +1,11 @@
+uuid: 3c12d2da-a996-4b85-b450-b46c0625811b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.emplois
+id: node.emplois
+target_entity_type_id: node
+target_bundle: emplois
+default_langcode: site_default
+language_alterable: false

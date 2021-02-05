@@ -1,0 +1,44 @@
+uuid: 96055e6c-8d9e-40ab-b044-9bdf5cc7d734
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.type_playlist.field_description
+    - field.field.paragraph.type_playlist.field_photo
+    - field.field.paragraph.type_playlist.field_titre
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.type_playlist
+  module:
+    - image
+id: paragraph.type_playlist.default
+targetEntityType: paragraph
+bundle: type_playlist
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photo:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_titre:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

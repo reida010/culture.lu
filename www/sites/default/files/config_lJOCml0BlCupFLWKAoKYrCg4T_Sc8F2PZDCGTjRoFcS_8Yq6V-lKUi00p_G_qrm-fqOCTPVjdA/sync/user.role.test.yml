@@ -1,0 +1,9 @@
+uuid: d52f1804-be54-4385-a13f-c37f02f5d94f
+langcode: fr
+status: true
+dependencies: {  }
+id: test
+label: test
+weight: 3
+is_admin: null
+permissions: {  }

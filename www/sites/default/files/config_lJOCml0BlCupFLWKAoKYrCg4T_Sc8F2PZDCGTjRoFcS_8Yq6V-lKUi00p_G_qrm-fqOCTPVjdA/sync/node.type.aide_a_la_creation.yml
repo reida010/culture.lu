@@ -1,0 +1,17 @@
+uuid: e9721192-aa0a-4902-8a58-a463a1fa4b31
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Aide à la création'
+type: aide_a_la_creation
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

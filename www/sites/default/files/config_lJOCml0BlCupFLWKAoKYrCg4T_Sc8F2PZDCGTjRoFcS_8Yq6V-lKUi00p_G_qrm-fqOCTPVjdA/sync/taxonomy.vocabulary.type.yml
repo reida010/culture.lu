@@ -1,0 +1,8 @@
+uuid: 2dac90bc-e9a0-40e8-9a30-d589b86655e6
+langcode: fr
+status: true
+dependencies: {  }
+name: Type
+vid: type
+description: 'Type de teaser - interview, podcast, etc'
+weight: 0

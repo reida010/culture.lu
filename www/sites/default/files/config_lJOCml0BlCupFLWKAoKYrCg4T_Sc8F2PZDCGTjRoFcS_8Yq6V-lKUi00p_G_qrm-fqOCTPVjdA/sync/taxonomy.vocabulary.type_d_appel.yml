@@ -1,0 +1,8 @@
+uuid: 4eb31d62-df07-4ced-8f8d-26d37c5b134d
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type d''appel'
+vid: type_d_appel
+description: ''
+weight: 0

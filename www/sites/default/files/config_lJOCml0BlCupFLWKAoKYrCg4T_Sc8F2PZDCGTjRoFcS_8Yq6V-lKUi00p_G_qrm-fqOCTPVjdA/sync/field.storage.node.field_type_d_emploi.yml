@@ -1,0 +1,48 @@
+uuid: 963a3957-2fd7-4736-92e0-906d4285f5df
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type_d_emploi
+field_name: field_type_d_emploi
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Créativité et design'
+      label: 'Créativité et design'
+    -
+      value: 'Finance et administration'
+      label: 'Finance et administration'
+    -
+      value: 'Gestion de projets'
+      label: 'Gestion de projets'
+    -
+      value: Management
+      label: Management
+    -
+      value: 'Marketing et communication'
+      label: 'Marketing et communication'
+    -
+      value: Rédaction
+      label: Rédaction
+    -
+      value: Technique
+      label: Technique
+    -
+      value: 'Vente et support client'
+      label: 'Vente et support client'
+    -
+      value: Autres
+      label: Autres
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

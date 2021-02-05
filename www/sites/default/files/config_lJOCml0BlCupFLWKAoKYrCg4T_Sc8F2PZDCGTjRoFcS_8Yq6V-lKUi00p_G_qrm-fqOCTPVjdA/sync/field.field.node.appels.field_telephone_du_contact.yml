@@ -1,0 +1,21 @@
+uuid: 20485410-6479-4982-801b-ae10dd392185
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telephone_du_contact
+    - node.type.appels
+  module:
+    - telephone
+id: node.appels.field_telephone_du_contact
+field_name: field_telephone_du_contact
+entity_type: node
+bundle: appels
+label: 'Téléphone du contact'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

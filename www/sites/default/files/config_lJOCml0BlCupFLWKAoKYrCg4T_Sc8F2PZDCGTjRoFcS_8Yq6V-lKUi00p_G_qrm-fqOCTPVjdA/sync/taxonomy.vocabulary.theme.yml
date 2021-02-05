@@ -1,0 +1,8 @@
+uuid: 75f0d3f3-31bc-4189-89a1-d40fa232fe36
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Catégorie - thème --  Blog / Secteur -- Appels'
+vid: theme
+description: 'Catégorie / Theme pour la partie Blog  && Secteur pour la partie Appels'
+weight: 0

@@ -1,0 +1,17 @@
+uuid: 4380d437-a5b2-4616-b3fd-1d92762cd15a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Gallerie
+type: gallerie
+description: 'Header gallery for the homepage'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

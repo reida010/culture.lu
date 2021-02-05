@@ -1,0 +1,18 @@
+uuid: 4a775590-236a-44a3-b86c-ab5d4888914e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_live
+field_name: field_live
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

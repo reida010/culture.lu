@@ -1,0 +1,71 @@
+uuid: 491a96f1-daaa-4723-95d1-2c9e89ed1295
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenu
+    - node.type.emplois
+    - paragraphs.paragraphs_type.content_accordeon
+    - paragraphs.paragraphs_type.content_document
+    - paragraphs.paragraphs_type.content_text
+  module:
+    - entity_reference_revisions
+id: node.emplois.field_contenu
+field_name: field_contenu
+entity_type: node
+bundle: emplois
+label: Contenu
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_accordeon: content_accordeon
+      content_document: content_document
+      content_text: content_text
+    target_bundles_drag_drop:
+      content_accordeon:
+        enabled: true
+        weight: 14
+      content_audio:
+        weight: 15
+        enabled: false
+      content_comment:
+        weight: 16
+        enabled: false
+      content_document:
+        enabled: true
+        weight: 17
+      content_pictures:
+        weight: 18
+        enabled: false
+      content_text:
+        enabled: true
+        weight: 19
+      content_video:
+        weight: 20
+        enabled: false
+      type_article:
+        weight: 21
+        enabled: false
+      type_interview:
+        weight: 22
+        enabled: false
+      type_livre:
+        weight: 23
+        enabled: false
+      type_playlist:
+        weight: 24
+        enabled: false
+      type_podcat:
+        weight: 25
+        enabled: false
+      type_video:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

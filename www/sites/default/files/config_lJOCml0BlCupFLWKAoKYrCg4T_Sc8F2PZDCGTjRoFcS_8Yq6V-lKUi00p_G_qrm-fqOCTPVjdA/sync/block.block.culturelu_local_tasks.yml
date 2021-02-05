@@ -1,0 +1,22 @@
+uuid: 3e4ad880-8cde-40d5-95b5-4a1cfebd92a4
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - culturelu
+_core:
+  default_config_hash: dN5H6hWBCp0XTr4I2W6inbc3odScxivoQ16Acf-5gFM
+id: culturelu_local_tasks
+theme: culturelu
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

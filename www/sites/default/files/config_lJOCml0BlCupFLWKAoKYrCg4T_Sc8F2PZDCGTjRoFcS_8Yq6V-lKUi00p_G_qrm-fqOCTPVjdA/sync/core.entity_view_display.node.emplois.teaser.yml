@@ -1,0 +1,35 @@
+uuid: d0b04797-a764-45b5-9c0e-775db5d4df09
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.emplois.field_contenu
+    - field.field.node.emplois.field_date
+    - field.field.node.emplois.field_lieu
+    - field.field.node.emplois.field_photo_icone
+    - field.field.node.emplois.field_texte_banniere_animee
+    - field.field.node.emplois.field_type_d_emploi
+    - field.field.node.emplois.field_type_de_contrat
+    - node.type.emplois
+  module:
+    - user
+id: node.emplois.teaser
+targetEntityType: node
+bundle: emplois
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contenu: true
+  field_date: true
+  field_lieu: true
+  field_photo_icone: true
+  field_texte_banniere_animee: true
+  field_type_d_emploi: true
+  field_type_de_contrat: true
+  langcode: true

@@ -1,0 +1,10 @@
+uuid: 9b36133a-c112-45ef-895c-77c9c5fe2c1b
+langcode: fr
+status: true
+dependencies: {  }
+id: content_text
+label: 'Contenu texte'
+icon_uuid: null
+icon_default: null
+description: 'Contenu de type texte'
+behavior_plugins: {  }

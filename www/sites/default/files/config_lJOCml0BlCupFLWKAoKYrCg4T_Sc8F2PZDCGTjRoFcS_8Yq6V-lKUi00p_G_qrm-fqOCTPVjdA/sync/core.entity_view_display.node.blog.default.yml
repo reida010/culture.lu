@@ -1,0 +1,96 @@
+uuid: daacaf6e-b06f-482d-80e1-d767e7f0c7a3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.blog.field_contenu
+    - field.field.node.blog.field_date
+    - field.field.node.blog.field_in_collaboration_with
+    - field.field.node.blog.field_resume
+    - field.field.node.blog.field_tags_blog
+    - field.field.node.blog.field_texte_banniere_animee
+    - field.field.node.blog.field_theme
+    - field.field.node.blog.field_type
+    - node.type.blog
+  module:
+    - datetime
+    - entity_reference_revisions
+    - user
+id: node.blog.default
+targetEntityType: node
+bundle: blog
+mode: default
+content:
+  field_contenu:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 2
+    label: visually_hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_in_collaboration_with:
+    weight: 9
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_resume:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_tags_blog:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_texte_banniere_animee:
+    weight: 6
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_theme:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

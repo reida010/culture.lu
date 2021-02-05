@@ -1,0 +1,38 @@
+uuid: c036804f-50a1-4592-afc6-8fa3acaea89d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.view_homepage_gallerie
+  module:
+    - context
+    - system
+    - views
+  theme:
+    - gin
+id: views_block__view_homepage_gallerie_block_1
+theme: gin
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:view_homepage_gallerie-block_1'
+settings:
+  id: 'views_block:view_homepage_gallerie-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

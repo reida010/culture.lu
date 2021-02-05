@@ -1,0 +1,20 @@
+uuid: 9b380667-f1cf-4549-8e87-d9b8a7ecbbad
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - culturelu
+_core:
+  default_config_hash: kPf5uyQ5hXq4CxxUYupgqeiWlAhDn2np_Q-adFlwJ_w
+id: culturelu_local_actions
+theme: culturelu
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

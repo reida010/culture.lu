@@ -1,0 +1,19 @@
+uuid: 72b52455-f738-4d85-9eed-e5e61897d7a1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titre
+    - paragraphs.paragraphs_type.type_livre
+id: paragraph.type_livre.field_titre
+field_name: field_titre
+entity_type: paragraph
+bundle: type_livre
+label: 'Nom du livre'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

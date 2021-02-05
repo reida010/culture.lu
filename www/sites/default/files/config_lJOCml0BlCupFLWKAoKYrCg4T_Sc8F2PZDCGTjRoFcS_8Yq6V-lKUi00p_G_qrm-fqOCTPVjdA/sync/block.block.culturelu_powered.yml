@@ -1,0 +1,22 @@
+uuid: 951642dc-f6f4-4e94-aed2-355a0f9335cf
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - culturelu
+_core:
+  default_config_hash: nJu0Zzrn-vmFhDMMKdnSgMgsn4OOtZTaqQR8Qe6EbOg
+id: culturelu_powered
+theme: culturelu
+region: footer
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

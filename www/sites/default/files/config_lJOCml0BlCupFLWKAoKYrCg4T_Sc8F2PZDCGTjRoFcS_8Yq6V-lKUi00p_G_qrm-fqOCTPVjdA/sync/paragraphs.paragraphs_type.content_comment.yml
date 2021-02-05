@@ -1,0 +1,10 @@
+uuid: d6f89483-88bf-41bf-8e4c-d5caa720758d
+langcode: fr
+status: true
+dependencies: {  }
+id: content_comment
+label: 'Contenu commentaire'
+icon_uuid: null
+icon_default: null
+description: 'Contenu de type commentaire/quote'
+behavior_plugins: {  }

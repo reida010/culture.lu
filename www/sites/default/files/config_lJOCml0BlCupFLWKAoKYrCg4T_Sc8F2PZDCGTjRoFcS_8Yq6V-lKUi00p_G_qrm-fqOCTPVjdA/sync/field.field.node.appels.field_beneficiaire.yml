@@ -1,0 +1,21 @@
+uuid: f43c08fa-8ea9-4376-bf92-4c0ec028c026
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_beneficiaire
+    - node.type.appels
+  module:
+    - options
+id: node.appels.field_beneficiaire
+field_name: field_beneficiaire
+entity_type: node
+bundle: appels
+label: Bénéficiaire
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

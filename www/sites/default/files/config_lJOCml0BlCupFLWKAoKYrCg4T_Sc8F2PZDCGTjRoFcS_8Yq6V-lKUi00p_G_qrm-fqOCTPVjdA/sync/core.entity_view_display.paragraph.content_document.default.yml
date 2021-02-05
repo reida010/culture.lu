@@ -1,0 +1,23 @@
+uuid: 881c2813-7634-48ac-baf9-3651aafe0a92
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_document.field_document
+    - paragraphs.paragraphs_type.content_document
+  module:
+    - file
+id: paragraph.content_document.default
+targetEntityType: paragraph
+bundle: content_document
+mode: default
+content:
+  field_document:
+    weight: 0
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

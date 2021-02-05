@@ -1,0 +1,22 @@
+uuid: 0f680d1f-88bc-4dca-bcc1-47c231f88c63
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uikit
+_core:
+  default_config_hash: N0MS7xVxe_e7Pr8KQyko0pAVY_10R-Xvy3y1Ev4raFM
+id: uikit_messages
+theme: uikit
+region: content
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

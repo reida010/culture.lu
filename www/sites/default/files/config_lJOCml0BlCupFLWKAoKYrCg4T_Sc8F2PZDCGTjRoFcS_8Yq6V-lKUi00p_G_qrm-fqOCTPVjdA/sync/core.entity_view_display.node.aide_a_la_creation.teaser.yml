@@ -1,0 +1,31 @@
+uuid: 552f5f02-8a2a-4c6b-8329-81320ff79cf0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.aide_a_la_creation.field_contenu
+    - field.field.node.aide_a_la_creation.field_image
+    - field.field.node.aide_a_la_creation.field_organisateur
+    - field.field.node.aide_a_la_creation.field_organisateur_website
+    - field.field.node.aide_a_la_creation.field_titre
+    - node.type.aide_a_la_creation
+  module:
+    - user
+id: node.aide_a_la_creation.teaser
+targetEntityType: node
+bundle: aide_a_la_creation
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contenu: true
+  field_image: true
+  field_organisateur: true
+  field_organisateur_website: true
+  field_titre: true
+  langcode: true

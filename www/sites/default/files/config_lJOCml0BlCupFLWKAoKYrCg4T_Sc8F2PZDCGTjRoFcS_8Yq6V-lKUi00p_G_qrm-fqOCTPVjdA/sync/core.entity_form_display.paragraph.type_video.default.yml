@@ -1,0 +1,37 @@
+uuid: ef22a731-952f-4351-bb0f-30418d4bbc47
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.type_video.field_description
+    - field.field.paragraph.type_video.field_photo
+    - field.field.paragraph.type_video.field_titre
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.type_video
+  module:
+    - image
+id: paragraph.type_video.default
+targetEntityType: paragraph
+bundle: type_video
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photo:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  field_titre: true
+  status: true

@@ -1,0 +1,23 @@
+uuid: fdef1832-e415-4d3a-801f-cf353a30f0e9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_live
+    - paragraphs.paragraphs_type.type_interview
+id: paragraph.type_interview.field_live
+field_name: field_live
+entity_type: paragraph
+bundle: type_interview
+label: Live
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Oui
+  off_label: 'Non '
+field_type: boolean

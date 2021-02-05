@@ -1,0 +1,10 @@
+uuid: fd84d03b-b258-4afc-b3d0-c1297d35db54
+langcode: fr
+status: true
+dependencies: {  }
+id: type_interview
+label: 'Résumé - Interview'
+icon_uuid: null
+icon_default: null
+description: 'Teaser type - interview'
+behavior_plugins: {  }

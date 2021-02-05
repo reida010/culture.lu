@@ -1,0 +1,18 @@
+uuid: be52e551-dade-4560-aef5-0403d1c6d3dc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.gallerie
+id: node.gallerie.title
+field_name: title
+entity_type: node
+bundle: gallerie
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

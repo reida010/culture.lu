@@ -1,0 +1,10 @@
+uuid: 62408370-86a9-478c-a9a0-559b81ab182c
+langcode: fr
+status: true
+dependencies: {  }
+id: type_livre
+label: 'Résumé - Livre'
+icon_uuid: null
+icon_default: null
+description: 'Teaser type - Livre'
+behavior_plugins: {  }

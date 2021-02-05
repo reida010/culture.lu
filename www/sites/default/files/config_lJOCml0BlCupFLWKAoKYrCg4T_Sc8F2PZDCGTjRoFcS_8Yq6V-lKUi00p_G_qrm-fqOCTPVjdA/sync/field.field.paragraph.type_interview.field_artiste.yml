@@ -1,0 +1,29 @@
+uuid: f0ef71ac-b08c-4d15-91be-0469ba07e8d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_artiste
+    - paragraphs.paragraphs_type.type_interview
+    - taxonomy.vocabulary.artiste
+id: paragraph.type_interview.field_artiste
+field_name: field_artiste
+entity_type: paragraph
+bundle: type_interview
+label: Artiste
+description: 'Artiste - interview based on Taxonomy autocompletion'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      artiste: artiste
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

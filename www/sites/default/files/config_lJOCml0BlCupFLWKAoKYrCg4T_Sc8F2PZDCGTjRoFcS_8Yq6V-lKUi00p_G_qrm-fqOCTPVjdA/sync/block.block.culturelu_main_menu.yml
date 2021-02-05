@@ -1,0 +1,27 @@
+uuid: 054991f5-e37c-462b-bf23-ca17975f77d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - culturelu
+_core:
+  default_config_hash: 3xaJG6Zx9ywb2j5hYoZ6k38mk6jurl5AD28d_nOXHi0
+id: culturelu_main_menu
+theme: culturelu
+region: navbar
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

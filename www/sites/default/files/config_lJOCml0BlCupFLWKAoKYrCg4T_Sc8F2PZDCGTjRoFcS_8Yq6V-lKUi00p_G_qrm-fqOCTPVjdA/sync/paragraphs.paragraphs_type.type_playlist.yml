@@ -1,0 +1,10 @@
+uuid: 320caa85-eeee-4604-8e62-067837d381c8
+langcode: fr
+status: true
+dependencies: {  }
+id: type_playlist
+label: 'Résumé - Playlist'
+icon_uuid: null
+icon_default: null
+description: 'Teaser type - playlist'
+behavior_plugins: {  }

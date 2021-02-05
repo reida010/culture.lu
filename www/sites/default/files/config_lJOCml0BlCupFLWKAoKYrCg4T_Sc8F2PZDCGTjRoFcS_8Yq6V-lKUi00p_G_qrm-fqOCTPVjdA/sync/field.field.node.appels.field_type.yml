@@ -1,0 +1,29 @@
+uuid: 8a18ba99-a9c3-4033-b6b3-a6dca6f30939
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.appels
+    - taxonomy.vocabulary.type_d_appel
+id: node.appels.field_type
+field_name: field_type
+entity_type: node
+bundle: appels
+label: Type
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_d_appel: type_d_appel
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: bbbab924-63ca-4258-96e7-c7bd50995ff8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - culturelu
+_core:
+  default_config_hash: W0MGXMy6s28EPHx_B2nXMCCNO-EG-dCyg82DuKfKbzA
+id: culturelu_search
+theme: culturelu
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

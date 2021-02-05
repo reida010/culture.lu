@@ -1,0 +1,11 @@
+uuid: e7fde558-8993-47ab-bdc0-86c7a2049c0d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.auteur
+id: taxonomy_term.auteur
+target_entity_type_id: taxonomy_term
+target_bundle: auteur
+default_langcode: site_default
+language_alterable: false

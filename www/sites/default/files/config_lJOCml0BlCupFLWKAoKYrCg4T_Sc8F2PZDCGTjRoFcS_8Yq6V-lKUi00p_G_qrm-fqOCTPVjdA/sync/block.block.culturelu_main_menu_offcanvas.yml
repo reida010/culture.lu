@@ -1,0 +1,27 @@
+uuid: 4f4eb2a2-19bf-4a5e-a95d-04956d5dfd2d
+langcode: fr
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - culturelu
+_core:
+  default_config_hash: Lc6VBVVboXEyCm5mWcDjDinnkZQkO_ckVifAf2QQPIs
+id: culturelu_main_menu_offcanvas
+theme: culturelu
+region: logo
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

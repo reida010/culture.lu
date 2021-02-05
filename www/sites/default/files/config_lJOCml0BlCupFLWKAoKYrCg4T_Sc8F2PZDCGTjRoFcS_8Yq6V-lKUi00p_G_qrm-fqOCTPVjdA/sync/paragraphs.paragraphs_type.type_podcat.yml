@@ -1,0 +1,10 @@
+uuid: aa7960c4-4e9b-4309-8896-43854f264f6e
+langcode: fr
+status: true
+dependencies: {  }
+id: type_podcat
+label: 'Résumé - Podcast'
+icon_uuid: null
+icon_default: null
+description: 'Teaser type - podcast'
+behavior_plugins: {  }

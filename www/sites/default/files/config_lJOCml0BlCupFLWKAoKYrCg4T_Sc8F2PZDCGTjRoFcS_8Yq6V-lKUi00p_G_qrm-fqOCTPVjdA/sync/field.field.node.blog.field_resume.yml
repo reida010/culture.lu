@@ -1,0 +1,74 @@
+uuid: 4de5fa21-3b33-45c3-b8f6-ade70b7d3e12
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume
+    - node.type.blog
+    - paragraphs.paragraphs_type.type_article
+    - paragraphs.paragraphs_type.type_interview
+    - paragraphs.paragraphs_type.type_livre
+    - paragraphs.paragraphs_type.type_playlist
+    - paragraphs.paragraphs_type.type_podcat
+    - paragraphs.paragraphs_type.type_video
+  module:
+    - entity_reference_revisions
+id: node.blog.field_resume
+field_name: field_resume
+entity_type: node
+bundle: blog
+label: 'Ajouter le ''résumé - type'' adapté'
+description: '<p><i><small>En fonction de la sélection du type /  sélectionner le résumé - type adapté</small></i></p>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      type_article: type_article
+      type_interview: type_interview
+      type_livre: type_livre
+      type_playlist: type_playlist
+      type_podcat: type_podcat
+      type_video: type_video
+    target_bundles_drag_drop:
+      content_accordeon:
+        weight: 13
+        enabled: false
+      content_audio:
+        weight: 12
+        enabled: false
+      content_comment:
+        weight: 13
+        enabled: false
+      content_pictures:
+        weight: 14
+        enabled: false
+      content_text:
+        weight: 15
+        enabled: false
+      content_video:
+        weight: 16
+        enabled: false
+      type_article:
+        enabled: true
+        weight: 7
+      type_interview:
+        enabled: true
+        weight: 8
+      type_livre:
+        enabled: true
+        weight: 9
+      type_playlist:
+        enabled: true
+        weight: 10
+      type_podcat:
+        enabled: true
+        weight: 11
+      type_video:
+        enabled: true
+        weight: 12
+field_type: entity_reference_revisions

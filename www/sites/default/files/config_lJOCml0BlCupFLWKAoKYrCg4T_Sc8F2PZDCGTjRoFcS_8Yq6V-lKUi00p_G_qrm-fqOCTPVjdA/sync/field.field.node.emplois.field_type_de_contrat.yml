@@ -1,0 +1,21 @@
+uuid: 4360292f-8f8e-4037-8178-6bdca8352424
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_de_contrat
+    - node.type.emplois
+  module:
+    - options
+id: node.emplois.field_type_de_contrat
+field_name: field_type_de_contrat
+entity_type: node
+bundle: emplois
+label: 'Type de contrat'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

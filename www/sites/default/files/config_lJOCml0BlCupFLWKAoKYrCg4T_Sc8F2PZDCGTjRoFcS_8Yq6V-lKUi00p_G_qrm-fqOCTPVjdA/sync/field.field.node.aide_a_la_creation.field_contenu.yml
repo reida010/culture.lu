@@ -1,0 +1,66 @@
+uuid: 5671b086-6122-4995-88d5-aaec743792cb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenu
+    - node.type.aide_a_la_creation
+    - paragraphs.paragraphs_type.content_accordeon
+    - paragraphs.paragraphs_type.content_text
+  module:
+    - entity_reference_revisions
+id: node.aide_a_la_creation.field_contenu
+field_name: field_contenu
+entity_type: node
+bundle: aide_a_la_creation
+label: Contenu
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_accordeon: content_accordeon
+      content_text: content_text
+    target_bundles_drag_drop:
+      content_accordeon:
+        enabled: true
+        weight: 13
+      content_audio:
+        weight: 14
+        enabled: false
+      content_comment:
+        weight: 15
+        enabled: false
+      content_pictures:
+        weight: 16
+        enabled: false
+      content_text:
+        enabled: true
+        weight: 17
+      content_video:
+        weight: 18
+        enabled: false
+      type_article:
+        weight: 19
+        enabled: false
+      type_interview:
+        weight: 20
+        enabled: false
+      type_livre:
+        weight: 21
+        enabled: false
+      type_playlist:
+        weight: 22
+        enabled: false
+      type_podcat:
+        weight: 23
+        enabled: false
+      type_video:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

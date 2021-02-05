@@ -1,0 +1,132 @@
+uuid: 0fcf4f94-8230-4ff8-9a62-ecab2b276713
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.appels.field_beneficiaire
+    - field.field.node.appels.field_contenu
+    - field.field.node.appels.field_date
+    - field.field.node.appels.field_email_du_contact
+    - field.field.node.appels.field_nationalite_beneficiaire
+    - field.field.node.appels.field_nom_du_contact
+    - field.field.node.appels.field_organisateur
+    - field.field.node.appels.field_photo_icone
+    - field.field.node.appels.field_telephone_du_contact
+    - field.field.node.appels.field_texte_banniere_animee
+    - field.field.node.appels.field_theme
+    - field.field.node.appels.field_type
+    - node.type.appels
+  module:
+    - datetime
+    - entity_reference_revisions
+    - image
+    - options
+    - telephone
+    - user
+id: node.appels.default
+targetEntityType: node
+bundle: appels
+mode: default
+content:
+  field_beneficiaire:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_contenu:
+    weight: 113
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_date:
+    weight: 102
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_email_du_contact:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_nationalite_beneficiaire:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_nom_du_contact:
+    weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_organisateur:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_photo_icone:
+    weight: 104
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_telephone_du_contact:
+    weight: 112
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_texte_banniere_animee:
+    weight: 105
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_theme:
+    weight: 115
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type:
+    weight: 114
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

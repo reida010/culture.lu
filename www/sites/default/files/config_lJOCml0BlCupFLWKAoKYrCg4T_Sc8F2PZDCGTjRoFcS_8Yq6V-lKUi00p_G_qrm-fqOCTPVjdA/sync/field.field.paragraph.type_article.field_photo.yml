@@ -1,0 +1,38 @@
+uuid: b14af627-bbeb-49e1-8ea3-0add65289ff9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_photo
+    - paragraphs.paragraphs_type.type_article
+  module:
+    - image
+id: paragraph.type_article.field_photo
+field_name: field_photo
+entity_type: paragraph
+bundle: type_article
+label: Photo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png jpg jpeg'
+  max_filesize: '5 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,27 @@
+uuid: 8b328522-84d7-4735-b9cc-f27a2442efa2
+langcode: fr
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - culturelu
+_core:
+  default_config_hash: '-Evtn7ZBMBftycpeTB0WdMP6ttBn597qWgtp83FCA_M'
+id: culturelu_account_menu_offcanvas
+theme: culturelu
+region: logo
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

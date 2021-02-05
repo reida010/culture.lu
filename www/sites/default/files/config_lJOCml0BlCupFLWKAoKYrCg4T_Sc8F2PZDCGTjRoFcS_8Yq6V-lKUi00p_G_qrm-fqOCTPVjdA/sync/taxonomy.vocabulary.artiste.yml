@@ -1,0 +1,8 @@
+uuid: 71154bcb-6f3f-44e3-b21e-23432e3cfeca
+langcode: fr
+status: true
+dependencies: {  }
+name: Artiste
+vid: artiste
+description: 'section ''Ecouter'' '
+weight: 0

@@ -1,0 +1,64 @@
+uuid: 7ca1397f-4a7c-400f-b480-fd92c71babf5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_gallery
+    - node.type.gallerie
+    - paragraphs.paragraphs_type.content_pictures
+  module:
+    - entity_reference_revisions
+id: node.gallerie.field_photo_gallery
+field_name: field_photo_gallery
+entity_type: node
+bundle: gallerie
+label: 'Photo Gallery'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_pictures: content_pictures
+    target_bundles_drag_drop:
+      content_accordeon:
+        weight: 13
+        enabled: false
+      content_audio:
+        weight: 14
+        enabled: false
+      content_comment:
+        weight: 15
+        enabled: false
+      content_pictures:
+        enabled: true
+        weight: 16
+      content_text:
+        weight: 17
+        enabled: false
+      content_video:
+        weight: 18
+        enabled: false
+      type_article:
+        weight: 19
+        enabled: false
+      type_interview:
+        weight: 20
+        enabled: false
+      type_livre:
+        weight: 21
+        enabled: false
+      type_playlist:
+        weight: 22
+        enabled: false
+      type_podcat:
+        weight: 23
+        enabled: false
+      type_video:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

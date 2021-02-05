@@ -1,0 +1,38 @@
+uuid: 48e7c8e0-fbca-487e-b3d0-fa28859a0af6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.views_emploi
+  module:
+    - context
+    - system
+    - views
+  theme:
+    - gin
+id: views_block__views_emploi_block_1
+theme: gin
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:views_emploi-block_1'
+settings:
+  id: 'views_block:views_emploi-block_1'
+  label: Emplois
+  provider: views
+  label_display: visible
+  views_label: Emplois
+  items_per_page: none
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

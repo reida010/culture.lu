@@ -1,0 +1,40 @@
+uuid: f6de2b2e-1a08-4ff5-abed-aa66de0192b5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.cadre_de_travail.field_contenu
+    - field.field.node.cadre_de_travail.field_titre
+    - node.type.cadre_de_travail
+  module:
+    - entity_reference_revisions
+    - user
+id: node.cadre_de_travail.default
+targetEntityType: node
+bundle: cadre_de_travail
+mode: default
+content:
+  field_contenu:
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_titre:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
