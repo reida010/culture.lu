@@ -7,10 +7,10 @@ uikit:
     gpl-compatible: true
   css:
     base:
-      /libraries/uikit/css/uikit.culture.css: { minified: true }
+      https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css: { type: external, minified: true }
   js:
-    /libraries/uikit/js/uikit.min.js: { minified: true }
-    /libraries/uikit/js/uikit-icons.min.js: { minified: true }
+    //cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js: { type: external, minified: true }
+    //cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js: { type: external, minified: true }
   dependencies:
     - core/jquery
     - core/jquery.once
