@@ -1,0 +1,101 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for custom module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+use Drupal\Core\Render\Markup;
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function custom_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $formObject = $form_state->getFormObject();
+  $entity = ($formObject && method_exists($formObject, 'getEntity')) ? $formObject->getEntity() : NULL;
+
+  if (in_array($form_id, [ 'node_blog_form', 'node_blog_edit_form' ])) {
+    $form = _blog_type_specific_form_alter($form, $form_state);
+    $form['#cache']['max-age'] = 0;
+  }
+
+}
+
+function _blog_type_specific_ajax_callback($form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $element = $form_state->getTriggeringElement();
+
+  ob_start();
+  dump([
+    '$element' => $element,
+    '$form_state' => $form_state,
+  ]);
+  $debug = ob_get_contents();
+  ob_end_clean();
+  if (!empty($debug)) {
+    \Drupal::messenger()->addMessage(Markup::create($debug));
+  }
+
+  return $form;
+}
+
+function _blog_type_specific_form_alter($form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $type_field_name = 'field_type';
+  $paragraph_field_name = 'field_resume';
+  $mappings = [
+    '6' => 'type_article',
+  ];
+
+  $type_element = &$form[$type_field_name];
+  $type_value = $form_state->getValue($type_field_name);
+  if (!$type_value) {
+    $type_value = $type_element['widget']['#default_value'];
+  }
+  $type_value = reset($type_value);
+
+  $paragraph_element = &$form[$paragraph_field_name];
+  $paragraph_type = isset($paragraph_element['widget'][0]) ? $paragraph_element['widget'][0]['#paragraph_type'] : NULL;
+  $paragraph_value = $form_state->getValue($paragraph_field_name);
+  if (!$paragraph_value) {
+    $paragraph_value = isset($paragraph_element['widget'][0]) ? $paragraph_element['widget'][0]['preview']['#paragraph'] : NULL;
+  }
+
+  $should_switch = $type_value && (!$paragraph_type || $paragraph_type !== $mappings[$type_value]);
+  if ($should_switch) {
+    //dump($paragraph_element);
+  }
+
+  $type_element['widget']['#ajax'] = [
+    'callback' => '_blog_type_specific_ajax_callback',
+    'event' => 'change',
+    'progress' => [
+      'type' => 'throbber',
+      'message' => t('loading header'),
+    ],
+  ];
+
+
+  ob_start();
+  dump([
+    '$type_field_name' => $type_field_name,
+    '$type_element' => $type_element,
+    '$type_value' => $type_value,
+    '$paragraph_field_name' => $paragraph_field_name,
+    '$paragraph_element' => $paragraph_element,
+    '$paragraph_type' => $paragraph_type,
+    '$paragraph_value' => $paragraph_value,
+    '$form' => $form,
+    '$form_state' => $form_state,
+    '$should_switch' => $should_switch,
+  ]);
+  $debug = ob_get_contents();
+  ob_end_clean();
+  if (!empty($debug)) {
+    \Drupal::messenger()->addMessage(Markup::create($debug));
+  }
+  return $form;
+}

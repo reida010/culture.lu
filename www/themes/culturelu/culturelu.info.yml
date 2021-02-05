@@ -6,12 +6,16 @@ core_version_requirement: ^8 || ^9
 base theme: uikit
 
 regions:
-  navbar: 'Navigation Bar'
-  offcanvas: 'Offcanvas Navigation'
+  logo: 'Header > Logo'
+  title: 'Header > Title'
+  navbar: 'Navigation Bar (left)'
+  navbar2: 'Navigation Bar (right)'
+  navbar_MOBILR: 'Navigation Bar (mobile)'
   content: Content
-  sidebar_first: 'Left Sidebar'
-  sidebar_second: 'Right Sidebar'
-  footer: 'Footer'
+  sidebar_first: 'Sidebar'
+  footer_left: 'Footer (left)'
+  footer_right: 'Footer (right)'
+  footer: 'Footer (bottom)'
 
 libraries:
   - culturelu/global-style
