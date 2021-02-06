@@ -15,6 +15,13 @@ uikit:
     - core/jquery
     - core/jquery.once
     - core/drupal
+    - culturelu/fonts
+
+fonts:
+  version: 0.1
+  css:
+    base:
+      css/fonts.css: {}
 
 
 global-style:

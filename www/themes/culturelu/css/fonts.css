@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Oskari G2';
+    src: url('fonts/OskariG2Medium.eot');
+    src: url('fonts/OskariG2Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OskariG2Medium.woff') format('woff'),
+        url('fonts/OskariG2Medium.ttf') format('truetype'),
+        url('fonts/OskariG2Medium.svg#OskariG2Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus Sans L';
+    src: url('fonts/NimbusSanL-Bol.eot');
+    src: url('fonts/NimbusSanL-Bol.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NimbusSanL-Bol.woff') format('woff'),
+        url('fonts/NimbusSanL-Bol.ttf') format('truetype'),
+        url('fonts/NimbusSanL-Bol.svg#NimbusSanL-Bol') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus Sans L';
+    src: url('fonts/NimbusSanL-BolIta.eot');
+    src: url('fonts/NimbusSanL-BolIta.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NimbusSanL-BolIta.woff') format('woff'),
+        url('fonts/NimbusSanL-BolIta.ttf') format('truetype'),
+        url('fonts/NimbusSanL-BolIta.svg#NimbusSanL-BolIta') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus Sans L';
+    src: url('fonts/NimbusSanL-Reg.eot');
+    src: url('fonts/NimbusSanL-Reg.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NimbusSanL-Reg.woff') format('woff'),
+        url('fonts/NimbusSanL-Reg.ttf') format('truetype'),
+        url('fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus Sans L';
+    src: url('fonts/NimbusSanL-RegIta.eot');
+    src: url('fonts/NimbusSanL-RegIta.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NimbusSanL-RegIta.woff') format('woff'),
+        url('fonts/NimbusSanL-RegIta.ttf') format('truetype'),
+        url('fonts/NimbusSanL-RegIta.svg#NimbusSanL-RegIta') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
