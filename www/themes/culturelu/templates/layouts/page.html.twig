@@ -47,8 +47,8 @@
  */
 #}
 <div id="page-wrapper">
-    <header{{ header_attributes.addClass('uk-container') }}>
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <header{{ header_attributes.addClass('uk-container uk-background-default') }}>
+        <div class="uk-background-default" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
             <div class="uk-grid uk-child-width-1-2" uk-grid>
                 {% if page.logo %}
                     {{ page.logo }}
